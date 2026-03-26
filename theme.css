@@ -1,0 +1,61 @@
+/* ========================================
+   REC MEDIA — Theme Variables
+   Thay đổi màu chủ đạo tại đây
+   ======================================== */
+
+:root {
+    /* === Primary Colors === */
+    --color-primary: #E10600;           /* Đỏ chủ đạo */
+    --color-primary-dark: #B00500;      /* Đỏ đậm */
+    --color-primary-light: #FF2D28;     /* Đỏ sáng */
+    --color-primary-rgb: 225, 6, 0;     /* RGB cho opacity */
+
+    /* === Background Colors === */
+    --bg-dark: #0A0A0A;                 /* Nền tối nhất */
+    --bg-section: #111111;              /* Nền section */
+    --bg-card: #1A1A1A;                 /* Nền card */
+    --bg-card-hover: #222222;           /* Nền card hover */
+    --bg-overlay: rgba(0, 0, 0, 0.6);  /* Overlay */
+
+    /* === Text Colors === */
+    --text-white: #FFFFFF;
+    --text-light: #E0E0E0;
+    --text-muted: #999999;
+    --text-dim: #666666;
+
+    /* === Accent / Borders === */
+    --border-color: #2A2A2A;
+    --border-light: #333333;
+
+    /* === Gradients === */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    --gradient-dark: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-section) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);
+
+    /* === Shadows === */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+    --shadow-primary: 0 4px 20px rgba(var(--color-primary-rgb), 0.3);
+
+    /* === Typography === */
+    --font-primary: 'Inter', 'Be Vietnam Pro', sans-serif;
+    --font-display: 'Be Vietnam Pro', 'Outfit', sans-serif;
+
+    /* === Spacing === */
+    --section-padding: 100px 0;
+    --container-width: 1280px;
+    --container-padding: 0 40px;
+
+    /* === Transitions === */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-smooth: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* === Border Radius === */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+}
