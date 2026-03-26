@@ -156,4 +156,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // === CAMERA UI SCROLL INTERACTION ===
+    const camUiTrack = document.getElementById('camUiTrack');
+    const camTimecodeIndicator = document.getElementById('camTimecode');
+
+    if (camUiTrack) {
+        window.addEventListener('scroll', () => {
+            // Parallax scale movement
+            const scrollOffset = window.scrollY * 0.25;
+            camUiTrack.style.transform = `translateY(${-scrollOffset}px)`;
+
+            // Update timecode based on scroll percentage
+            if (camTimecodeIndicator) {
+                const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+                const totalFrames = Math.floor(scrollPercent * 90000); // 1 hour @ 25fps total
+                const f = totalFrames % 25;
+                const s = Math.floor(totalFrames / 25) % 60;
+                const m = Math.floor(totalFrames / 1500) % 60;
+                const h = Math.floor(totalFrames / 90000) % 24;
+                
+                camUiTrack.parentElement.parentElement.style.opacity = 1; // Ensure visible
+                
+                camTimecodeIndicator.textContent = 
+                    String(h).padStart(2, '0') + ':' +
+                    String(m).padStart(2, '0') + ':' +
+                    String(s).padStart(2, '0') + ':' +
+                    String(f).padStart(3, '0').slice(0,2); // Keep it 00:00:00:00 style
+            }
+        }, { passive: true });
+    }
+
 });

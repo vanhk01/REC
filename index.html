@@ -323,9 +323,33 @@
             </div>
         </div>
         <div class="clients__slider">
-            <div class="clients__track-img">
-                <img src="assets/img/clients_grid.png" alt="Khách hàng REC Media">
-                <img src="assets/img/clients_grid.png" alt="Khách hàng REC Media">
+            <div class="clients__track-items">
+                <!-- Group 1 -->
+                <div class="client-logo-item"><img src="assets/customers/viettel.png" alt="Viettel"></div>
+                <div class="client-logo-item"><img src="assets/customers/fpt.png" alt="FPT"></div>
+                <div class="client-logo-item"><img src="assets/customers/cg.png" alt="Carlsberg"></div>
+                <div class="client-logo-item"><img src="assets/customers/doji.png" alt="DOJI"></div>
+                <div class="client-logo-item"><img src="assets/customers/heineken.png" alt="Heineken"></div>
+                <div class="client-logo-item"><img src="assets/customers/v3.png" alt="Vinhomes"></div>
+                <div class="client-logo-item"><img src="assets/customers/vietcombank.png" alt="Vietcombank"></div>
+                <div class="client-logo-item"><img src="assets/customers/vinfast.png" alt="Vinfast"></div>
+                <div class="client-logo-item"><img src="assets/customers/vinpearl.png" alt="Vinpearl"></div>
+                <div class="client-logo-item"><img src="assets/customers/habeco.png" alt="Habeco"></div>
+                <div class="client-logo-item"><img src="assets/customers/thaco.png" alt="Thaco"></div>
+                <div class="client-logo-item"><img src="assets/customers/vig.png" alt="Viglacera"></div>
+                <!-- Group 2 for smooth loop -->
+                <div class="client-logo-item"><img src="assets/customers/viettel.png" alt="Viettel"></div>
+                <div class="client-logo-item"><img src="assets/customers/fpt.png" alt="FPT"></div>
+                <div class="client-logo-item"><img src="assets/customers/cg.png" alt="Carlsberg"></div>
+                <div class="client-logo-item"><img src="assets/customers/doji.png" alt="DOJI"></div>
+                <div class="client-logo-item"><img src="assets/customers/heineken.png" alt="Heineken"></div>
+                <div class="client-logo-item"><img src="assets/customers/v3.png" alt="Vinhomes"></div>
+                <div class="client-logo-item"><img src="assets/customers/vietcombank.png" alt="Vietcombank"></div>
+                <div class="client-logo-item"><img src="assets/customers/vinfast.png" alt="Vinfast"></div>
+                <div class="client-logo-item"><img src="assets/customers/vinpearl.png" alt="Vinpearl"></div>
+                <div class="client-logo-item"><img src="assets/customers/habeco.png" alt="Habeco"></div>
+                <div class="client-logo-item"><img src="assets/customers/thaco.png" alt="Thaco"></div>
+                <div class="client-logo-item"><img src="assets/customers/vig.png" alt="Viglacera"></div>
             </div>
         </div>
     </section>
@@ -378,31 +402,42 @@
                 <h2 class="cta__title">Rolling, <span>Action!</span></h2>
                 <a href="#" class="cta__btn">Liên hệ ngay</a>
 
-                <div class="cta__camera-ui">
-                    <div class="cam-item">
-                        <span class="cam-value">F2.5</span>
-                        <span>Khẩu độ</span>
-                    </div>
-                    <div class="cam-item">
-                        <span class="cam-value">ISO 500</span>
-                        <span>Độ nhạy sáng</span>
-                    </div>
-                    <div class="cam-item">
-                        <span class="cam-value">1000K</span>
-                        <span>Cân bằng trắng</span>
-                    </div>
-                    <div class="cam-item">
-                        <span class="cam-value">00:00:00:00</span>
-                        <span>Mã thời gian</span>
-                    </div>
-                    <div class="cam-item">
-                        <span class="cam-value">MF</span>
-                        <span>Lấy nét</span>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
+    </section>
+
+    <!-- ====== CAMERA SCROLL INDICATOR (Fixed) ====== -->
+    <div class="cam-ui-scroll">
+        <div class="cam-ui-top">
+            <span>F2.5</span>
+            <span class="highlight">ISO 500</span>
+            <span>1000K</span>
+        </div>
+        <div class="cam-ui-scale">
+            <div class="cam-ui-pointer"></div>
+            <div class="cam-ui-track" id="camUiTrack">
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-1</span></div>
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-2</span></div>
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-3</span></div>
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-4</span></div>
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-5</span></div>
+                <div class="cam-tick"><span>..</span></div>
+                <div class="cam-tick"><span>-6</span></div>
+            </div>
+        </div>
+        <div class="cam-ui-bottom">
+            <span>MF</span>
+            <div class="cam-ui-timecode" id="camTimecode">00:00:05:680</div>
+        </div>
+    </div>
 
     <!-- ====== FOOTER ====== -->
     <footer class="footer">
